@@ -2,13 +2,13 @@ name: Performance Issue
 description: Report a performance issue in the project
 title: "[Performance]: "
 labels: ["performance"]
-assignees: ["thomasthaddeus"] #["username1", "username2"]
+assignees: ["username1", "username2"]
 body:
   - type: markdown
     attributes:
       value: |
         ## Performance Issue
-        
+
         Please provide as much detail as you can about the performance issue.
   - type: textarea
     id: performance-description

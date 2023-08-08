@@ -1,0 +1,12 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question
+    url: https://apparellnstuff.me/Blackjack-pygame
+    about: Please ask and answer questions here.
+issue_templates:
+  - name: Bug report
+    description: Report a bug in the software.
+    template: bug_report.yml
+  - name: Feature request
+    description: Suggest a new feature for the software.
+    template: feature_request.yml
