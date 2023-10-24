@@ -1,0 +1,29 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 10
+    versioning-strategy: "lockfile-only"
+    ignore:
+      - dependency-name: "express"
+        versions: ["4.x"]
+
+
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: monthly
+    versioning-strategy: increase
+  - package-ecosystem: npm
+    directory: "/src/"
+    schedule:
+      interval: monthly
+    versioning-strategy: increase
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: monthly

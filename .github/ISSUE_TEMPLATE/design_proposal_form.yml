@@ -1,0 +1,33 @@
+name: Design Proposal
+description: Propose a design change for the project
+title: "[Design]: "
+labels: ["design"]
+assignees: ["username1", "username2"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Design Proposal
+
+        Please provide as much detail as you can about the proposed design change.
+  - type: textarea
+    id: design-description
+    attributes:
+      label: Please describe the proposed design change.
+      description: Provide a clear and concise description of the design change you're proposing.
+    validations:
+      required: true
+  - type: textarea
+    id: design-reason
+    attributes:
+      label: Why are you proposing this design change?
+      description: Describe the reasons for proposing this design change.
+    validations:
+      required: true
+  - type: textarea
+    id: design-improvement
+    attributes:
+      label: How would this improve the project?
+      description: Explain how this design change would benefit the project.
+    validations:
+      required: true

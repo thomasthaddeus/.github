@@ -1,0 +1,47 @@
+name: Community Health Pull Request
+description: Propose changes or additions to community health files
+title: "[Community Health]: "
+labels: [community, health]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for opening a pull request! Please fill out the following template to help us review your changes.
+
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: Provide a concise title for your pull request.
+      placeholder: e.g., "Update CODE_OF_CONDUCT.md"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a detailed description of the changes you are proposing.
+      placeholder: Describe your changes in detail here...
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Please confirm the following.
+      options:
+        - label: I have read and followed the [contributing guidelines](CONTRIBUTING.md).
+          required: true
+        - label: I have tested my changes.
+          required: true
+        - label: My changes are documented.
+          required: true
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional Information
+      description: Provide any additional information or context that may be necessary.
+      placeholder: Any additional information...

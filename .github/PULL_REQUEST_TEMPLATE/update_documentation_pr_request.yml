@@ -1,0 +1,20 @@
+name: Documentation Update Pull Request
+description: Propose a documentation update
+title: "[Docs]: "
+labels: [documentation]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a detailed description of the proposed documentation update.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have followed the documentation style guide.
+          required: true

@@ -1,0 +1,33 @@
+name: Test Failure
+description: Report a failing test in the project
+title: "[Test Failure]: "
+labels: ["test", "bug"]
+assignees: ["username1", "username2"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Test Failure
+
+        Please provide as much detail as you can about the failing test.
+  - type: textarea
+    id: test-description
+    attributes:
+      label: Please describe the test that's failing.
+      description: Provide a clear and concise description of the failing test.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: How to reproduce the failure?
+      description: Provide a list of steps to reproduce the test failure.
+    validations:
+      required: true
+  - type: textarea
+    id: suggested-fix
+    attributes:
+      label: Do you have a suggested fix?
+      description: If you have ideas on how to fix this, please share!
+    validations:
+      required: false
